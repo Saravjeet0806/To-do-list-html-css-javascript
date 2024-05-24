@@ -110,3 +110,10 @@ ul li span{
 ul li span:hover {
  background: #edeef0;    
 }
+
+@media (max-width: 378px){
+ .container{
+    min-width: 100vh;
+ }
+
+}
