@@ -8,8 +8,8 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,170,222,1) 12%, rgba(0,212,255,1) 100%);
+  background: rgb(197, 147, 11);
+background: linear-gradient(90deg, rgb(213, 211, 235) 0%, rgba(31,170,222,1) 12%, rgb(234, 255, 0) 100%);
   padding: 10px;
 }
 
@@ -83,4 +83,30 @@ ul li::before{
     background-position: center;
     top: 12px;
     left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    color: #555;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+ background: #edeef0;    
 }
