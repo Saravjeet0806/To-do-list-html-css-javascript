@@ -5,6 +5,9 @@ function addTask(){
     if(inputBox.value===''){
         alert("You must enter something!");
     }
+    if(inputBox.value.length>20){
+        alert("enter a smaller task");
+    }
     else{
         let li= document.createElement("li");
         li.innerHTML=inputBox.value;
