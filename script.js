@@ -48,6 +48,16 @@ listContainer.addEventListener("click", function(e){
     }
 }, false);
 
+//keyboard event... 
+var input = document.getElementById("input-box");
+input.addEventListener("keypress", function(e) {
+  if (e.key === "Enter") {
+
+    e.preventDefault();
+    document.getElementById("addtask").click();
+  }
+});
+
 //storing data
 
 function saveData(){
