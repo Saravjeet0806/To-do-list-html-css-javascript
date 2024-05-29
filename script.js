@@ -19,7 +19,7 @@ function addTask(){
     if(inputBox.value===''){
         alert("You must enter something!");
     }
-    if(inputBox.value.length>20){
+    else if(inputBox.value.length>20){
         alert("enter a smaller task");
     }
     else{
@@ -50,10 +50,10 @@ listContainer.addEventListener("click", function(e){
 
 //keyboard event... 
 var input = document.getElementById("input-box");
-input.addEventListener("keypress", function(e) {
-  if (e.key === "Enter") {
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
 
-    e.preventDefault();
+    event.preventDefault();
     document.getElementById("addtask").click();
   }
 });
